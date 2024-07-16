@@ -90,6 +90,7 @@ class DB {
 				'times_accessed' => '1',
 				'referer'        => '',
 				'user_agent'     => '',
+				'ip'             => '',
 			]
 		);
 
@@ -99,7 +100,7 @@ class DB {
 			self::clear_logs();
 		}
 
-		return self::table()->insert( $args, [ '%s', '%s', '%d', '%s', '%s', '%s' ] );
+		return self::table()->insert( $args, [ '%s', '%s', '%d', '%s', '%s', '%s', '%s' ] );
 	}
 
 	/**

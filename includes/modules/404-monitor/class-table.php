@@ -226,6 +226,7 @@ class Table extends List_Table {
 			'user_agent'     => esc_html__( 'User-Agent', 'rank-math' ),
 			'times_accessed' => esc_html__( 'Hits', 'rank-math' ),
 			'accessed'       => esc_html__( 'Access Time', 'rank-math' ),
+			'ip'             => esc_html__( 'IP', 'rank-math' ),
 		];
 
 		$columns = $this->filter_columns( $columns );

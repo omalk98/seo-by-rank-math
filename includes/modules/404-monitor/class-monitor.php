@@ -148,6 +148,7 @@ class Monitor {
 				'uri'        => $uri,
 				'referer'    => Param::server( 'HTTP_REFERER', '' ),
 				'user_agent' => $this->get_user_agent(),
+				'ip'         => Param::server( 'REMOTE_ADDR', '' ),
 			]
 		);
 	}
